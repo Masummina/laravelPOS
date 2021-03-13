@@ -21,7 +21,7 @@ Route::post('login', 'Auth\LoginController@authenticate')->name('login.confirm')
 
 Route::group(['middleware' => 'auth'], function(){
 	
-Route::get('dashboard', function (){
+Route::get('users', function (){
     return view('welcome');
 });
 // Route::view('/', 'home.index');
